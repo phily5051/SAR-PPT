@@ -1,0 +1,100 @@
+---
+title: "What is Synthetic Aperture Radar (SAR)?"
+subtitle: "Just 2 minute SAR!"
+author: "Philyoung Jeong"
+institute: "21047736"
+date: "2023/01/23 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# SAR in a Nutshell
+
+### SAR is a type of active sensor which produces its own energy and records the energy reflected from the Earh
+
+```{r echo=FALSE, out.width='60%', fig.align='center'}
+knitr::include_graphics('img/SARticle.jpg')
+
+```
+
+Source: NASA SAR Handbook
+
+---
+# What are the advantages of SAR?
+
+### - Precise & High-Resolution Images
+### - Operates 24 hours in All Weather Conditions
+### - A Wide range of Applicability
+### - Detect changes rapidly
+---
+
+# What is SAR used for?
+
+### SAR can be applied for anywhere
+
+.pull-left[
+```{r echo=FALSE, out.width='60%'}
+knitr::include_graphics('img/forest.png')
+
+```
+
+Forestry (Source: NASA)
+]
+
+.pull-right[
+```{r echo=FALSE, out.width='60%'}
+knitr::include_graphics('img/g.jpg')
+ 
+```
+
+Geology (Source: NASA)
+]
+
+.pull-left[
+```{r echo=FALSE, out.width='60%'}
+knitr::include_graphics('img/ice.png')
+
+```
+
+Glaciology (Source: NASA)
+]
+
+.pull-right[
+```{r echo=FALSE, out.width='60%'}
+knitr::include_graphics('img/ocean.png')
+
+```
+
+Oceanography (Source: NASA)
+]
+
+---
+# Studies on the Application of SAR
+### * P-band of SAR is positively linked to forest biomass (Le Toan et al, 1992)
+### * The potential of SAR and InSAR data for hazard mapping (Wiesmann et al, 2001)
+### * L-band SAR images provide a robust and direct calculation of glacier motion (Strozzi, 2008)  
+### * Dominant Ocean Wavelength and Direction can be detected by SAR (Alpers et al, 1981)
+---
+
+# Reflection
+
+### SAR can obtain high-resolution data from a wide range of regions regardless of weather conditions as it collects data at longer wavelengths. However, I wonder whether there is a difference in images' resolution compared to those obtained at visible wavelengths 
+
+
+### Furthermore, given that the radar is being used to monitor environmental hazards, could it be also used to monitor and assess the old infrastructre within the built-environment? The infrastructure assessment by using SAR could be cost- and time-efficient than physical investigation
+
+---
+
+# References
+Alpers, W.R., Ross, D.B. and Rufenach, C.L., 1981. On the detectability of ocean surface waves by real and synthetic aperture radar. Journal of Geophysical Research: Oceans, 86(C7), pp.6481-6498.
+
+Le Toan, T., Beaudoin, A., Riom, J. and Guyon, D., 1992. Relating forest biomass to SAR data. IEEE Transactions on Geoscience and Remote Sensing, 30(2), pp.403-411.
+
+Strozzi, T., Kouraev, A., Wiesmann, A., Wegmüller, U., Sharov, A. and Werner, C., 2008. Estimation of Arctic glacier motion with satellite L-band SAR data. Remote Sensing of Environment, 112(3), pp.636-645.
+
+Wiesmann, A., Wegmuller, U., Honikel, M., Strozzi, T. and Werner, C.L., 2001, July. Potential and methodology of satellite based SAR for hazard mapping. In IGARSS 2001. Scanning the Present and Resolving the Future. Proceedings. IEEE 2001 International Geoscience and Remote Sensing Symposium (Cat. No. 01CH37217) (Vol. 7, pp. 3262-3264). IEEE.
