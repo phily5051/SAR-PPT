@@ -4,7 +4,7 @@
     <title>What is Synthetic Aperture Radar (SAR)?</title>
     <meta charset="utf-8" />
     <meta name="author" content="Philyoung Jeong" />
-    <script src="libs/header-attrs-2.16/header-attrs.js"></script>
+    <script src="libs/header-attrs-2.20/header-attrs.js"></script>
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
   </head>
@@ -25,54 +25,71 @@ class: center, middle, inverse, title-slide
 ### 21047736
 ]
 .date[
-### 2023/01/23 (updated: 2023-01-26)
+### 2023/01/23 (updated: 2023-03-22)
 ]
 
 ---
 
 
-# SAR in a Nutshell
+# Overview
+SAR is a type of **active senso**r which produces its own energy and records the energy reflected from the Earth
 
-### SAR is a type of active sensor which produces its own energy and records the energy reflected from the Earh
+.pull-left[- Advantages:
+  - High resolution
+  - Independent of weather condition
+  - Capability to penetrate clouds &amp; vegetation
 
-&lt;img src="img/SARticle.jpg" width="60%" style="display: block; margin: auto;" /&gt;
 
-Source: NASA SAR Handbook
+- Limitation:
+  - Speckle noise - difficult to interpret the images
+  - Limited temporal resolution
+  - Dependence on antenna size
+] 
+
+&lt;div class="figure" style="text-align: right"&gt;
+&lt;img src="img/SARticle.jpg" alt="Source: NASA SAR Handbook" width="50%" height="50%" /&gt;
+&lt;p class="caption"&gt;Source: NASA SAR Handbook&lt;/p&gt;
+&lt;/div&gt;
+
 
 ---
-# What are the advantages of SAR?
+# The Frequency and Wavelength of SAR
 
-### - Precise &amp; High-Resolution Images
-### - Operates 24 hours in All Weather Conditions
-### - A Wide range of Applicability
-### - Detect changes rapidly
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="img/SAR.png" alt="Frequency and Wavelength of SAR (Source: NASA Earth Data)" width="75%" /&gt;
+&lt;p class="caption"&gt;Frequency and Wavelength of SAR (Source: NASA Earth Data)&lt;/p&gt;
+&lt;/div&gt;
+
+---
+class: inverse, center, middle
+
+#Application
 ---
 
-# What is SAR used for?
+# Application - Forest mapping
 
-### SAR can be applied for anywhere
-
-.pull-left[
 &lt;img src="img/forest.png" width="60%" /&gt;
 
+
 Forestry (Source: NASA)
-]
+
+---
 
 .pull-right[
 &lt;img src="img/g.jpg" width="60%" /&gt;
-
+---
 Geology (Source: NASA)
 ]
 
 .pull-left[
 &lt;img src="img/ice.png" width="60%" /&gt;
-
+---
 Glaciology (Source: NASA)
 ]
 
 .pull-right[
 &lt;img src="img/ocean.png" width="60%" /&gt;
-
+---
 Oceanography (Source: NASA)
 ]
 
@@ -97,6 +114,8 @@ Oceanography (Source: NASA)
 Alpers, W.R., Ross, D.B. and Rufenach, C.L., 1981. On the detectability of ocean surface waves by real and synthetic aperture radar. Journal of Geophysical Research: Oceans, 86(C7), pp.6481-6498.
 
 Le Toan, T., Beaudoin, A., Riom, J. and Guyon, D., 1992. Relating forest biomass to SAR data. IEEE Transactions on Geoscience and Remote Sensing, 30(2), pp.403-411.
+
+NASA SAR Handbook (n.d.) &lt;https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar&gt;
 
 Strozzi, T., Kouraev, A., Wiesmann, A., Wegmüller, U., Sharov, A. and Werner, C., 2008. Estimation of Arctic glacier motion with satellite L-band SAR data. Remote Sensing of Environment, 112(3), pp.636-645.
 

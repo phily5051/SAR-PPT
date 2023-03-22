@@ -13,45 +13,58 @@ output:
       countIncrementalSlides: false
 ---
 
-# SAR in a Nutshell
+# Overview
+SAR is a type of **active senso**r which produces its own energy and records the energy reflected from the Earth
 
-### SAR is a type of active sensor which produces its own energy and records the energy reflected from the Earh
+.pull-left[- Advantages:
+  - High resolution
+  - Independent of weather condition
+  - Capability to penetrate clouds & vegetation
 
-```{r echo=FALSE, out.width='60%', fig.align='center'}
+
+- Limitation:
+  - Speckle noise - difficult to interpret the images
+  - Limited temporal resolution
+  - Dependence on antenna size
+] 
+
+```{r echo=FALSE, out.width='50%', out.height= '50%', fig.align='right', fig.cap= "Source: NASA SAR Handbook"}
 knitr::include_graphics('img/SARticle.jpg')
 
 ```
 
-Source: NASA SAR Handbook
 
 ---
-# What are the advantages of SAR?
+# The Frequency and Wavelength of SAR
 
-### - Precise & High-Resolution Images
-### - Operates 24 hours in All Weather Conditions
-### - A Wide range of Applicability
-### - Detect changes rapidly
+```{r echo=FALSE, out.width= "75%", fig.align='center', fig.cap="Frequency and Wavelength of SAR (Source: NASA Earth Data)"}
+knitr::include_graphics('img/SAR.png')
+```
+
+---
+class: inverse, center, middle
+
+#Application
 ---
 
-# What is SAR used for?
+# Application - Forest mapping
 
-### SAR can be applied for anywhere
-
-.pull-left[
 ```{r echo=FALSE, out.width='60%'}
 knitr::include_graphics('img/forest.png')
 
 ```
 
+
 Forestry (Source: NASA)
-]
+
+---
 
 .pull-right[
 ```{r echo=FALSE, out.width='60%'}
 knitr::include_graphics('img/g.jpg')
  
 ```
-
+---
 Geology (Source: NASA)
 ]
 
@@ -60,7 +73,7 @@ Geology (Source: NASA)
 knitr::include_graphics('img/ice.png')
 
 ```
-
+---
 Glaciology (Source: NASA)
 ]
 
@@ -69,7 +82,7 @@ Glaciology (Source: NASA)
 knitr::include_graphics('img/ocean.png')
 
 ```
-
+---
 Oceanography (Source: NASA)
 ]
 
@@ -94,6 +107,8 @@ Oceanography (Source: NASA)
 Alpers, W.R., Ross, D.B. and Rufenach, C.L., 1981. On the detectability of ocean surface waves by real and synthetic aperture radar. Journal of Geophysical Research: Oceans, 86(C7), pp.6481-6498.
 
 Le Toan, T., Beaudoin, A., Riom, J. and Guyon, D., 1992. Relating forest biomass to SAR data. IEEE Transactions on Geoscience and Remote Sensing, 30(2), pp.403-411.
+
+NASA SAR Handbook (n.d.) <https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar>
 
 Strozzi, T., Kouraev, A., Wiesmann, A., Wegmüller, U., Sharov, A. and Werner, C., 2008. Estimation of Arctic glacier motion with satellite L-band SAR data. Remote Sensing of Environment, 112(3), pp.636-645.
 
