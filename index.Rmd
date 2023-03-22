@@ -158,4 +158,3 @@ PrintBibliography(myBib
                   , start = 6, end =8
                   )
 ```
----
