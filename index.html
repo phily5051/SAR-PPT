@@ -31,6 +31,8 @@ class: center, middle, inverse, title-slide
 ---
 
 
+
+
 # Overview
 SAR is a type of **active senso**r which produces its own energy and records the energy reflected from the Earth
 
@@ -46,80 +48,133 @@ SAR is a type of **active senso**r which produces its own energy and records the
   - Dependence on antenna size
 ] 
 
-&lt;div class="figure" style="text-align: right"&gt;
-&lt;img src="img/SARticle.jpg" alt="Source: NASA SAR Handbook" width="50%" height="50%" /&gt;
-&lt;p class="caption"&gt;Source: NASA SAR Handbook&lt;/p&gt;
-&lt;/div&gt;
-
+&lt;img src="img/SARticle.jpg" width="50%" height="50%" style="display: block; margin: auto 0 auto auto;" /&gt;
+.small[(Source: [NASA](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar))
+]
 
 ---
 # The Frequency and Wavelength of SAR
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="img/SAR.png" alt="Frequency and Wavelength of SAR (Source: NASA Earth Data)" width="75%" /&gt;
-&lt;p class="caption"&gt;Frequency and Wavelength of SAR (Source: NASA Earth Data)&lt;/p&gt;
-&lt;/div&gt;
-
+&lt;img src="img/SAR.png" width="75%" style="display: block; margin: auto auto auto 0;" /&gt;
+Frequency and Wavelength of SAR (Source: [NASA](https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar))
 ---
 class: inverse, center, middle
 
 #Application
 ---
 
-# Application - Forest mapping
+# Application - Forest Mapping
 
-&lt;img src="img/forest.png" width="60%" /&gt;
-
-
-Forestry (Source: NASA)
-
----
-
-.pull-right[
-&lt;img src="img/g.jpg" width="60%" /&gt;
----
-Geology (Source: NASA)
-]
+SAR has been widely applied in forestry sector due to its ability to penetrate through clouds and foliage, providing all-weather and day-night imaging capabilities
 
 .pull-left[
-&lt;img src="img/ice.png" width="60%" /&gt;
----
-Glaciology (Source: NASA)
-]
+- **Forest Change Detection**: 
 
-.pull-right[
-&lt;img src="img/ocean.png" width="60%" /&gt;
----
-Oceanography (Source: NASA)
-]
+SAR can capture deforestation and forest degradation by identifying changes in the backscatter of radar signals from the forest canopy ([Kellndorfer, Flores-Anderson, Herndon et al., 2019](#bib-kellndorfer2019using))
+
+- **Forest Carbon Change**: 
+
+Forest carbon variations can be estimated by using InSAR to measure changes in the height of the forest canopy. ([Solberg, Gizachew, Næsset et al., 2015](#bib-solberg2015monitoring))
+] 
+
+&lt;img src="img/sar_forest.jpg" width="53%" height="70%" style="display: block; margin: auto 0 auto auto;" /&gt;
+.small[Forest mapping (Source: [NASA Earth Data](https://www.earthdata.nasa.gov/learn/webinars-and-tutorials/getting-started-with-sar))]
 
 ---
-# Studies on the Application of SAR
-### * P-band of SAR is positively linked to forest biomass (Le Toan et al, 1992)
-### * The potential of SAR and InSAR data for hazard mapping (Wiesmann et al, 2001)
-### * L-band SAR images provide a robust and direct calculation of glacier motion (Strozzi, 2008)  
-### * Dominant Ocean Wavelength and Direction can be detected by SAR (Alpers et al, 1981)
+# Application - Infrastructure Monitoring
+
+SAR data can be used to monitor urban infrastructure such as buildings, bridges, and roads, detect structural changes and deformations, assess damage caused by natural disasters, and monitor urban growth and development
+
+.pull-left[
+- **Bridge Monitoring**: 
+
+By utilizing InSAR technology with high spatial resolution data, it is possible to conduct a comprehensive survey on numerous bridges, which can facilitate the identification of anomalies ([Sartorelli, Previtali, Giordano et al., 2021](#bib-sartorelli2021use))
+
+- **Damaged Building Detection**: 
+
+Earthquake-induced damaged buildings can be detected by using bi-temporal SAR data obtained in different observation modes. ([Kim, Park, and Lee, 2023](#bib-kim2023detection))
+] 
+&lt;img src="img/building.jpg" width="53%" height="70%" style="display: block; margin: auto 0 auto auto;" /&gt;
+.small[Damaged Building Detection (Source: [Kim, Park, and Lee, 2023](https://www.mdpi.com/2072-4292/15/2/308)]
+
+---
+# Application - Geology
+
+SAR can be applied in the context of geology for various purposes such as mapping terrain and land cover, detecting changes in land surface elevation, and monitoring natural hazards such as earthquakes, volcanic eruptions, landslides, and floods
+
+.pull-left[
+- **Natural Hazard Mapping**: 
+
+The combination of SAR images using interferometric, polarimetric and tomographic processing allows for the monitoring and characterization of natural hazards regardless of weather conditions. ([Lu, Dzurisin, Jung et al., 2010](#bib-lu2010radar))
+
+- **Flood Mapping**: 
+
+The large spatial coverage of SAR data provided relative spatial distribution information on the typhoon impacts in Japan  ([Tay, Yun, Chin et al., 2020](#bib-tay2020rapid))
+] 
+&lt;img src="img/flood.png" width="53%" height="70%" style="display: block; margin: auto 0 auto auto;" /&gt;
+.small[Flood Detection Map (Source: [NASA](https://appliedsciences.nasa.gov/our-impact/news/esa-copernicus-sentinel-1-sar-used-flood-detection-maps))]
 ---
 
 # Reflection
 
-### SAR can obtain high-resolution data from a wide range of regions regardless of weather conditions as it collects data at longer wavelengths. However, I wonder whether there is a difference in images' resolution compared to those obtained at visible wavelengths 
+- The research on SAR sensor enabled me to understand its benefits and limitation. Its continuous imaging of the Earth's surface was fascinating
+
+- However, the complexity of interpretation of the data still remains as a challenge, which requires knowledge and experience
+
+- Although SAR data have been widely used in various sectors, it seems that its **application in urban environment is somehow limited** 
+
+- *My Question...*
+  
+  - Does collecting data at longer wavelengths result in a **difference in images' resolution** compared to *those obtained at visible wavelengths?*
+  
+  - Can SAR data be applied to better understand wildlife?
+  
+- For the future exploration, I would love to study more about the use of SAR in combination of other remote sensing technologies which would enrich what SAR can offer us!
 
 
-### Furthermore, given that the radar is being used to monitor environmental hazards, could it be also used to monitor and assess the old infrastructre within the built-environment? The infrastructure assessment by using SAR could be cost- and time-efficient than physical investigation
 
 ---
 
 # References
-Alpers, W.R., Ross, D.B. and Rufenach, C.L., 1981. On the detectability of ocean surface waves by real and synthetic aperture radar. Journal of Geophysical Research: Oceans, 86(C7), pp.6481-6498.
+&lt;a name=bib-kellndorfer2019using&gt;&lt;/a&gt;[Kellndorfer, J., A.
+Flores-Anderson, K. Herndon, et
+al.](#cite-kellndorfer2019using) (2019). "Using SAR data for
+mapping deforestation and forest degradation". In: _The SAR
+Handbook. Comprehensive Methodologies for Forest Monitoring
+and Biomass Estimation; ServirGlobal: Hunstville, AL, USA_,
+pp. 65-79.
 
-Le Toan, T., Beaudoin, A., Riom, J. and Guyon, D., 1992. Relating forest biomass to SAR data. IEEE Transactions on Geoscience and Remote Sensing, 30(2), pp.403-411.
+&lt;a name=bib-kim2023detection&gt;&lt;/a&gt;[Kim, M., S. Park, and S.
+Lee](#cite-kim2023detection) (2023). "Detection of Damaged
+Buildings Using Temporal SAR Data with Different Observation
+Modes". In: _Remote Sensing_ 15.2, p. 308.
 
-NASA SAR Handbook (n.d.) &lt;https://www.earthdata.nasa.gov/learn/backgrounders/what-is-sar&gt;
+&lt;a name=bib-lu2010radar&gt;&lt;/a&gt;[Lu, Z., D. Dzurisin, H. Jung, et
+al.](#cite-lu2010radar) (2010). "Radar image and data fusion
+for natural hazards characterisation". In: _International
+Journal of Image and Data Fusion_ 1.3, pp. 217-242.
 
-Strozzi, T., Kouraev, A., Wiesmann, A., Wegmüller, U., Sharov, A. and Werner, C., 2008. Estimation of Arctic glacier motion with satellite L-band SAR data. Remote Sensing of Environment, 112(3), pp.636-645.
+&lt;a name=bib-sartorelli2021use&gt;&lt;/a&gt;[Sartorelli, L., M.
+Previtali, P. F. Giordano, et al.](#cite-sartorelli2021use)
+(2021). "Use of SAR satellite data in bridge monitoring with
+application to urban areas". In: _Civil Structural Health
+Monitoring: Proceedings of CSHM-8 Workshop 8_. Springer. , pp.
+935-955.
 
-Wiesmann, A., Wegmuller, U., Honikel, M., Strozzi, T. and Werner, C.L., 2001, July. Potential and methodology of satellite based SAR for hazard mapping. In IGARSS 2001. Scanning the Present and Resolving the Future. Proceedings. IEEE 2001 International Geoscience and Remote Sensing Symposium (Cat. No. 01CH37217) (Vol. 7, pp. 3262-3264). IEEE.
+&lt;a name=bib-solberg2015monitoring&gt;&lt;/a&gt;[Solberg, S., B.
+Gizachew, E. Næsset, et al.](#cite-solberg2015monitoring)
+(2015). "Monitoring forest carbon in a Tanzanian woodland
+using interferometric SAR: a novel methodology for REDD+". In:
+_Carbon balance and management_ 10, pp. 1-14.
+
+---
+# References
+
+&lt;a name=bib-tay2020rapid&gt;&lt;/a&gt;[Tay, C. W., S. Yun, S. T. Chin,
+et al.](#cite-tay2020rapid) (2020). "Rapid flood and damage
+mapping using synthetic aperture radar in response to Typhoon
+Hagibis, Japan". In: _Scientific data_ 7.1, p. 100.
+---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
